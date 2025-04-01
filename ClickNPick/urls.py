@@ -12,6 +12,7 @@ urlpatterns = [
     path('', views.Home, name='home'),
     path('store/', include('store.urls')),
     path('cart/', include('carts.urls')),
+    path('accounts/', include('accounts.urls')),
 ] + static(settings.MEDIA_URL, document_root = settings.MEDIA_ROOT)
 
 # if settings.DEBUG:
